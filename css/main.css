@@ -1,0 +1,94 @@
+body{
+   background-color:  hsl(218, 23%, 16%);
+}
+.attribution { font-size: 11px; text-align: center; color: aliceblue; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 500px;
+    width: 100%;
+    height: 100vh;
+
+}
+
+#main_block{
+    position: relative;
+    width: 40%;
+    top: 30%;
+    max-width: 500px;
+    min-width: 400px;
+    height: 330px;
+    border-radius: 15px;
+    background-color: #313A49;
+    font-family: 'Manrope', sans-serif;
+}
+#advice{
+    position: relative;
+    top: 10%;
+    color: #45B184;
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+#text{
+    position: relative;
+    color: aliceblue;
+    text-align: center;
+    top: 20%;
+    min-height: 119px;
+    max-height: 119px;
+    margin: 0 7px 0 7px;
+    font-size: 28px;
+}
+.line{
+    position: relative;
+    top: 30%;
+    left: 15%;
+}
+#circle{
+    position: relative;
+    left: 44%;
+    width: 60px;
+    height: 60px;
+    top: 32%;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    background-color: hsl(150, 100%, 66%);
+    transition: 1s;
+    cursor: pointer;
+}
+#circle:hover{
+    transition: 0.7s;
+    box-shadow: 0 0 10px #21f391, 0 0 40px #21f380, 0 0 80px #21f38a;
+}
+.svg{
+    position: relative;
+    width: 100%;
+    left: 18px;
+    top: 17px;
+}
+footer{
+    position: absolute;
+    bottom: 0;  
+}
+
+
+@media only screen and (max-width: 376px) {
+    #main_block {
+      min-width: 360px;
+      left: 10%;
+    }
+    #text{
+        font-size: 22px;
+    }
+    #circle{
+        left: 42%;
+    }
+    .attribution{
+        display: none;
+    }
+  }
